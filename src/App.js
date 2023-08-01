@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import MainPage from './MainPage';
 import IndividualCalendar from './IndividualCalendar';
 import CreateCalendar from './CreateCalendar';
+import Calendar from './Calendar';
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
         <Routes> {/* Update Switch to Routes */}
           <Route path="/" element={<MainPage />} />
           <Route path="/calendars/:id" element={<IndividualCalendar />} />
-	  <Route path="/new-calendar" element={<CreateCalendar />} /> {/* Add the route */}
+	  <Route path="/new-calendar" element={<CreateCalendar />} />
+	  <Route path="/calendar" element={<Calendar />} /> {/* Add the route */}
         </Routes> {/* Update Route to use "element" prop */}
       </div>
     </Router>

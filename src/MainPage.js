@@ -20,7 +20,8 @@ const MainPage = () => {
           <Link to={`/calendars/${calendar.id}`}>View Calendar</Link>
         </div>
       ))}
-	  <Link to="/new-calendar">Create New Calendar</Link> {/* Add the button */}
+	  <Link to="/new-calendar">Create New Calendar</Link>
+	  <Link to="/calendar">View Calendar</Link>
     </div>
   );
 };
